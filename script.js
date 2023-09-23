@@ -5,6 +5,9 @@ newEntry.addEventListener("click", () => {
   modal.style.display = "block";
 });
 
-window.addEventListener("click", () => {
-  modal.style.display = "none";
-});
+// Not working idk why
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
