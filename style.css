@@ -6,4 +6,29 @@ body {
 
 .modal {
   display: none;
+  background: #ffffff;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  z-index: 1;
+  padding: 20px;
+  box-shadow: 1px 1px 5px grey;
+  border-radius: 10px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: initial;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+}
+
+.title {
+  margin-bottom: 12px;
+}
+
+input {
+  margin-bottom: 8px;
 }
