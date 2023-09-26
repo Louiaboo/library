@@ -47,7 +47,7 @@ main > .container {
 .new:hover {
   color: #f3f3f1;
   background-color: #52865c;
-  cursor: grid;
+  cursor: pointer;
 }
 
 .modal {
