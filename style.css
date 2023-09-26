@@ -16,6 +16,40 @@ header {
   align-items: center;
 }
 
+main {
+  padding: 3em;
+}
+
+main > .container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.card > .new {
+  display: flex;
+  color: #bac5c6;
+  font-size: 4rem;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: #8996a0;
+  justify-content: center;
+  align-items: center;
+}
+
+.new:hover {
+  color: #f3f3f1;
+  background-color: #52865c;
+  cursor: grid;
+}
+
 .modal {
   display: none;
   background: #f3f3f1;
