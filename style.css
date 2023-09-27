@@ -83,9 +83,23 @@ main > .container {
 }
 
 .close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 1.2rem;
+  width: 1.2rem;
   font-size: 1.5rem;
-  align-self: initial;
+  border-radius: 50%;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
   color: #93a1ad;
+}
+
+.close:hover {
+  background: #ed1b34;
+  color: #f3f3f1;
 }
 
 /* toggle switch by https://codepen.io/Sivacva/ */
@@ -138,6 +152,10 @@ main > .container {
   box-shadow:
     0 0 0 2px #4db848,
     0 0 4px #4db848;
+}
+
+.wordcount > input {
+  width: 50%;
 }
 
 input {
