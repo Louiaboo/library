@@ -30,6 +30,9 @@ main > .container {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  border: 1px solid #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #1e1e1e;
 }
 
 .card > .new {
@@ -46,7 +49,7 @@ main > .container {
 
 .new:hover {
   color: #f3f3f1;
-  background-color: #52865c;
+  background-color: #4db848;
   cursor: pointer;
 }
 
@@ -89,7 +92,7 @@ main > .container {
   position: absolute;
   height: 1.2rem;
   width: 1.2rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border-radius: 50%;
   top: 10px;
   right: 10px;
@@ -99,7 +102,7 @@ main > .container {
 
 .close:hover {
   background: #ed1b34;
-  color: #f3f3f1;
+  color: #311516;
 }
 
 /* toggle switch by https://codepen.io/Sivacva/ */
