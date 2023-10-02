@@ -3,6 +3,15 @@ const newEntry = document.querySelector(".new");
 const body = document.querySelector("body");
 const close = document.querySelector(".close");
 const input = document.querySelector("input");
+const myLibrary = [];
+
+function Book() {
+  // the constructor...
+}
+
+function addBookToLibrary() {
+  // do stuff here
+}
 
 newEntry.addEventListener("click", () => {
   modal.style.display = "flex";
