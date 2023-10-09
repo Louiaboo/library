@@ -1,8 +1,8 @@
 const modal = document.querySelector(".modal");
 const newEntry = document.querySelector(".new");
-const body = document.querySelector("body");
 const close = document.querySelector(".close");
 const input = document.querySelector("input");
+const container = document.querySelector(".container");
 const myLibrary = [];
 
 function Book(title, author, words, read) {
@@ -12,8 +12,8 @@ function Book(title, author, words, read) {
   this.read = read;
 }
 
-function addBookToLibrary() {
-  // do stuff here
+function addBookToLibrary(Book) {
+  myLibrary.push(Book);
 }
 
 newEntry.addEventListener("click", () => {
