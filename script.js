@@ -5,8 +5,11 @@ const close = document.querySelector(".close");
 const input = document.querySelector("input");
 const myLibrary = [];
 
-function Book() {
-  // the constructor...
+function Book(title, author, words, read) {
+  this.title = title;
+  this.author = author;
+  this.words = words;
+  this.read = read;
 }
 
 function addBookToLibrary() {
