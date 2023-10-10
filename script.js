@@ -33,6 +33,15 @@ window.onclick = function (event) {
   }
 };
 
+for (i = 0; i < myLibrary.length; i++) {
+  // container append title
+  // container append author
+  // container append wordcount
+  // container append read
+  // add classname to all child elements
+  // format and style is similar to the modal design
+}
+
 close.addEventListener("click", () => {
   form.reset();
   modal.style.display = "none";
