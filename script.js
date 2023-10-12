@@ -4,6 +4,10 @@ const close = document.querySelector(".close");
 const form = document.querySelector(".form");
 const container = document.querySelector(".container");
 const submit = document.querySelector("#submit");
+const title = document.querySelector("#title");
+const author = document.querySelector("#author");
+const wordcount = document.querySelector("#wordcount");
+const readStatus = document.querySelector(".toggle");
 const myLibrary = [];
 
 function Book(title, author, words, read) {
@@ -18,6 +22,13 @@ function addBookToLibrary(Book) {
 }
 
 submit.addEventListener("click", () => {
+  let newBook = new Book(
+    title.textContent,
+    author.textContent,
+    wordcount.textContent,
+    readStatus.checked,
+  );
+  addBookToLibrary(newBook);
   form.reset();
 });
 
@@ -33,14 +44,9 @@ window.onclick = function (event) {
   }
 };
 
-for (i = 0; i < myLibrary.length; i++) {
-  // container append title
-  // container append author
-  // container append wordcount
-  // container append read
-  // add classname to all child elements
-  // format and style is similar to the modal design
-}
+// for (let i = 0; i < myLibrary.length; i++) {
+//  container.appendChild("div");
+// }
 
 close.addEventListener("click", () => {
   form.reset();
