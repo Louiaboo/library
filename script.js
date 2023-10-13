@@ -44,9 +44,37 @@ window.onclick = function (event) {
   }
 };
 
-// for (let i = 0; i < myLibrary.length; i++) {
-//  container.appendChild("div");
-// }
+for (let i = 0; i < myLibrary.length; i++) {
+  let temp;
+  temp = container.appendChild("div");
+  temp.classList.add("card");
+  for (let j = 0; j < 4; j++) {
+    let temp2;
+    switch (j) {
+      case 0:
+        temp2.innerHTML = myLibrary[i].title;
+        break;
+      case 1:
+        temp2.innerHTML = myLibrary[i].author;
+        break;
+      case 2:
+        temp2.innerHTML = myLibrary[i].wordcount;
+        break;
+      case 3:
+        let newSwitch;
+        let newToggle;
+        let newSlider;
+        newSwitch = temp2.appendChild("label");
+        newSwitch.classList.add("switch");
+        newToggle = temp2.appendChild("input");
+        newToggle.setAttribute("type", "checkbox");
+        newToggle.classList.add("toggle");
+        newSlider = temp2.appendChild("span");
+        newSlider.classList.add("slider");
+        break;
+    }
+  }
+}
 
 close.addEventListener("click", () => {
   form.reset();
