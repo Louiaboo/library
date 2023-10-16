@@ -49,7 +49,7 @@ for (let i = 0; i < myLibrary.length; i++) {
   temp = container.appendChild("div");
   temp.classList.add("card");
   for (let j = 0; j < 4; j++) {
-    let temp2;
+    let temp2 = temp.appendChild("div");
     switch (j) {
       case 0:
         temp2.innerHTML = myLibrary[i].title;
